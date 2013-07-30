@@ -42,6 +42,8 @@ $textColor:             #d1d1d1 !default;
 $linkColor:             $accent !default;
 $linkColorHover:        darken($linkColor, 15%) !default;
 
+$bordersColor:			#2d2f31 !default;
+
 
 // Typography
 // -------------------------
@@ -81,13 +83,13 @@ $borderRadiusSmall:     3px !default;
 $tableBackground:                   transparent !default; // overall background-color
 $tableBackgroundAccent:             darken($bodyBackground, 5%) !default; // for striping
 $tableBackgroundHover:              lighten($bodyBackground, 10%) !default; // for hover
-$tableBorder:                       #2d2f31 !default; // table and cell border
+$tableBorder:                       $bordersColor !default; // table and cell border
 
 // Buttons
 // -------------------------
-$btnBackground:                     $white !default;
-$btnBackgroundHighlight:            darken($white, 10%) !default;
-$btnBorder:                         #ccc !default;
+$btnBackground:                     darken($bodyBackground, 5%) !default;
+$btnBackgroundHighlight:            darken($bodyBackground, 10%) !default;
+$btnBorder:                         #2d2f31 !default;
 
 $btnPrimaryBackground:              $linkColor !default;
 $btnPrimaryBackgroundHighlight:     adjust-hue($btnPrimaryBackground, 20%) !default;
@@ -110,8 +112,8 @@ $btnInverseBackgroundHighlight:     $grayDarker !default;
 
 // Forms
 // -------------------------
-$inputBackground:               $white !default;
-$inputBorder:                   #ccc !default;
+$inputBackground:               lighten($bodyBackground, 10%) !default;
+$inputBorder:                   #2d2f31 !default;
 $inputBorderRadius:             $baseBorderRadius !default;
 $inputDisabledBackground:       $grayLighter !default;
 $formActionsBackground:         #f5f5f5 !default;

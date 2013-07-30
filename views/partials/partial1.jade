@@ -1,32 +1,27 @@
-.container.flex-column
+.container-fluid.flex-column
   .flex-item
-    .row-fluid
+    .row-fluid.filters
       .span7.date-range-links
         strong.pull-left Отобразить за: 
-        ul.nav.nav-pills.pull-left
-          li
-            a(href='#') сегодня
-          li
-            a(href='#') вчера
-          li
-            a(href='#') неделю
-          li
-            a(href='#') месяц
-          li
-            a(href='#') 3 месяца
-          li
-            a(href='#') год
+        .btn-group
+          button.btn.btn-small(type='button', ng-model='radioModel', btn-radio='\'today\'') сегодня
+          button.btn.btn-small(type='button', ng-model='radioModel', btn-radio='\'yesterday\'') вчера
+          button.btn.btn-small(type='button', ng-model='radioModel', btn-radio='\'week\'') неделю
+          button.btn.btn-small(type='button', ng-model='radioModel', btn-radio='\'month\'') месяц
+          button.btn.btn-small(type='button', ng-model='radioModel', btn-radio='\'quarter\'') 3 месяца
+          button.btn.btn-small(type='button', ng-model='radioModel', btn-radio='\'year\'') год
+            
       .span5
-        form.form-inline.date-range-picker
+        form.form-inline.text-right.date-range-picker
           strong Период 
           .input-append
-            input(type='text', placeholder='2013-07-10')
-            button.btn(type='button')
+            input.size-small(type='text', placeholder='2013-07-10')
+            button.btn.btn-small(type='button')
               i.icon-calendar
           span  - 
           .input-append
-            input(type='text', placeholder='2013-07-18')
-            button.btn(type='button')
+            input.size-small(type='text', placeholder='2013-07-22')
+            button.btn.btn-small(type='button')
               i.icon-calendar
     .row-fluid
       .span12
