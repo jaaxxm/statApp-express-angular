@@ -12,7 +12,6 @@
     "angular-resource": "git://github.com/angular/bower-angular-resource.git#~1.0.7",
     "angular-sanitize": "git://github.com/angular/bower-angular-sanitize.git#~1.0.7",
     "angular-cookies": "git://github.com/angular/bower-angular-cookies.git#~1.0.7",
-    "d3-angular": "git://github.com/beefsack/angular-d3.git",
     "es5-shim": "git://github.com/kriskowal/es5-shim.git#~2.0.8",
     "font-awesome": "git://github.com/FortAwesome/Font-Awesome.git#~3.2.1",
     "json3": "git://github.com/bestiejs/json3.git#~3.2.4",

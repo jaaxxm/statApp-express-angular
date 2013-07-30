@@ -9,7 +9,7 @@
 // Base class and wrapper
 .navbar {
   overflow: visible;
-  margin-bottom: $baseLineHeight;
+/*   margin-bottom: $baseLineHeight; */
 
   // Fix for IE7's bad z-indexing so dropdowns don't appear below content that follows the navbar
   *position: relative;
@@ -22,10 +22,11 @@
   min-height: $navbarHeight;
   padding-left:  20px;
   padding-right: 20px;
-  @include gradient-vertical($navbarBackgroundHighlight, $navbarBackground);
-/*   border: 1px solid $navbarBorder; */
-/*   @include border-radius($baseBorderRadius); */
-/*   @include box-shadow(0 1px 4px rgba(0,0,0,.065)); */
+  background: $navbarBackground;
+  // @include gradient-vertical($navbarBackgroundHighlight, $navbarBackground);
+  // border: 1px solid $navbarBorder;
+  // @include border-radius($baseBorderRadius);
+  // @include box-shadow(0 1px 4px rgba(0,0,0,.065));
 
   // Prevent floats from breaking the navbar
   @include clearfix();
@@ -392,7 +393,7 @@
 .navbar-inverse {
 
   .navbar-inner {
-    @include gradient-vertical($navbarInverseBackgroundHighlight, $navbarInverseBackground);
+    background: $navbarInverseBackground;
     border-color: $navbarInverseBorder;
   }
 

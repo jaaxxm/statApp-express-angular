@@ -1,4 +1,5 @@
-.container
+.container.flex-column
+  .flex-item
     .row-fluid
       .span7.date-range-links
         strong.pull-left Отобразить за: 
@@ -29,7 +30,7 @@
               i.icon-calendar
     .row-fluid
       .span12
-        div
+        div.hide
           input(type='button', ng-click='addCircles()', value='Add circles')
           input(type='button', ng-click='clearCircles()', value='Clear circles')
           input(type='button', ng-click='toggleCircleVisibility()', value='Toggle circle visibility')
@@ -37,11 +38,13 @@
           input(type='button', ng-click='addSquares()', value='Add squares')
           input(type='button', ng-click='clearSquares()', value='Clear squares')
           input(type='button', ng-click='toggleSquareVisibility()', value='Toggle square visibility')
-        svg(viewbox='0 0 1000 500', preserveaspectratio='xMidyMid')
-          g(d3='d3', d3-data='circles', d3-renderer='circleRenderer', ng-show='$parent.showCircles')
-          g(d3='d3', d3-data='squares', d3-renderer='squareRenderer', ng-show='$parent.showSquares')
+        p.text-center Stat bars will be here
+        //- svg(viewbox='0 0 1000 500', preserveaspectratio='xMidyMid')
+        //-   g(d3='d3', d3-data='circles', d3-renderer='circleRenderer', ng-show='$parent.showCircles')
+        //-   g(d3='d3', d3-data='squares', d3-renderer='squareRenderer', ng-show='$parent.showSquares')
+  .flex-item
     .row-fluid
       .span12
         .gridStyle(ng-grid='gridOptions')
-p This is the partial for view 1.
-p The current time is {{time}}
+        p This is the partial for view 1.
+        p The current time is {{time}}

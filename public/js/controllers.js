@@ -109,8 +109,8 @@ angular.module('statApp.controllers', []).
 
     $scope.gridOptions = {
       data: 'myData',
-      enablePinning: true,
-       columnDefs: [{ field: "name", width: 120, pinned: true },
+      enablePinning: false,
+       columnDefs: [{ field: "name"},
                     { field: "age", width: 120 },
                     { field: "birthday", width: 120 },
                     { field: "salary", width: 120 }]

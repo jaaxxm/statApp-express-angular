@@ -2,7 +2,7 @@ extends layout
 
 block body
 
-  header.app-header
+  header(class="app-header", ng-controller="AppCtrl")
       .navbar.navbar-inverse
         .navbar-inner
           .container-fluid
@@ -10,58 +10,39 @@ block body
               span.icon-bar
               span.icon-bar
               span.icon-bar
-            a.brand(href='#') Call Stats
+            a.brand(href='main') Call Stats
             .nav-collapse.collapse
               p.navbar-text.pull-left
                 | Logged in as
-                a.navbar-link(href='#') Username
+                a.navbar-link(href='#'){{name}}
               ul.nav.pull-right
                 li
-                  a(href='#') Настройки
+                  a(href='settings') Настройки
                 li
-                  a(href='') Выход
+                  a(href='logout') Выход
   nav.app-nav
     ul.nav.nav-list
       li
-        a(href='#')
-          i.icon-chevron-right
-          | Главная
+        a(href='stat')
+          i.icon-bar-chart.icon-2x
+          span Статистика
       li
-        a(href='#contact')
-          i.icon-chevron-right
-          | Контакты
+        a(href='call-log')
+          i.icon-asterisk.icon-2x
+          span Журнал звонков
       li
-        a(href='#')
-          i.icon-chevron-right
-          | Журнал звонков
+        a(href='call-daily')
+          i.icon-table.icon-2x
+          span Звонки по дням
       li
-        a(href='#')
-          i.icon-chevron-right
-          | Звонки по дням
-      li
-        a(href='#')
-          i.icon-chevron-right
-          | ROI - возврат инвестиций
+        a(href='roi')
+          i.icon-tasks.icon-2x
+          span возврат инвестиций
+  div(class="app-container", ng-view)
 
-
-
-
-  div(ng-controller="AppCtrl")
-    h2 Hello {{name}}
-    ul.menu
-      li
-        a(href="view1") view1
-      li
-        a(href="view2") view2
-
-    div(class="app-container", ng-view)
-
-    div.text-center
-      | Angular Socket.io seed app: v
-      span(app-version)
-
-
-
+  div.text-center
+    | Angular Socket.io seed app: v
+    span(app-version)
 
   script(src='bower_components/jquery/jquery.min.js')
   script(src="/socket.io/socket.io.js")  
