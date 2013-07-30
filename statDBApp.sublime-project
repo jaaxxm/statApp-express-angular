@@ -2,11 +2,15 @@
 	"folders":
 	[
 		{
-			"path": "/D/work/call-stat/statDBApp-jade",
-			"folder_exclude_patterns": [
-			   "node_modules",
-			   "public/bower_components"
-			]
+			"folder_exclude_patterns":
+			[
+				"node_modules",
+				"public/bower_components"
+			],
+			"path": "/D/work/call-stat/statDBApp-jade"
+		},
+		{
+			"path": "/D/clients/call-stat/statApp-express-angular"
 		}
 	]
 }

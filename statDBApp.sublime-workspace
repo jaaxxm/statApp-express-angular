@@ -470,14 +470,6 @@
 			}
 		},
 		{
-			"file": "statDBApp.sublime-project",
-			"settings":
-			{
-				"buffer_size": 168,
-				"line_ending": "Unix"
-			}
-		},
-		{
 			"file": "public/js/filters.js",
 			"settings":
 			{
@@ -561,7 +553,7 @@
 				"Package Control: Install Package"
 			]
 		],
-		"width": 400.0
+		"width": 416.0
 	},
 	"console":
 	{
@@ -578,6 +570,7 @@
 	},
 	"file_history":
 	[
+		"/D/clients/call-stat/statApp-express-angular/statDBApp.sublime-project",
 		"/D/work/call-stat/statDBApp-jade/views/layout.jade",
 		"/D/work/call-stat/statDBApp-jade/public/js/services.js",
 		"/D/work/call-stat/statDBApp-jade/statDBApp.sublime-workspace",
@@ -704,8 +697,7 @@
 		"/D/work/flinch.com.ua/flinch2/web/styles/scss/bootstrap/_utilities.scss",
 		"/D/work/flinch.com.ua/flinch2/web/styles/scss/bootstrap/_wells.scss",
 		"/D/work/flinch.com.ua/flinch2/protected/components/widgets/Profile/views/left_profile.php",
-		"/D/work/flinch.com.ua/flinch2/protected/components/widgets/Profile/views/top_profile_info.php",
-		"/D/work/flinch.com.ua/flinch2/web/styles/scss/bootstrap/_thumbnails.scss"
+		"/D/work/flinch.com.ua/flinch2/protected/components/widgets/Profile/views/top_profile_info.php"
 	],
 	"find":
 	{
@@ -713,7 +705,7 @@
 	},
 	"find_in_files":
 	{
-		"height": 90.0,
+		"height": 0.0,
 		"where_history":
 		[
 			"D:\\work\\call-stat\\statDBApp-jade",
@@ -1062,7 +1054,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 9,
 			"sheets":
 			[
 				{
@@ -1106,8 +1098,8 @@
 						"selection":
 						[
 							[
-								1130,
-								1270
+								1128,
+								1128
 							]
 						],
 						"settings":
@@ -1667,8 +1659,8 @@
 						"selection":
 						[
 							[
-								188,
-								188
+								196,
+								196
 							]
 						],
 						"settings":
@@ -1686,36 +1678,6 @@
 				},
 				{
 					"buffer": 10,
-					"file": "statDBApp.sublime-project",
-					"settings":
-					{
-						"buffer_size": 168,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								152,
-								152
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/JavaScript/JSON.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 11,
 					"file": "public/js/filters.js",
 					"settings":
 					{
