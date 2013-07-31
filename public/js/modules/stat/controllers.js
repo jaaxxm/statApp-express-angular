@@ -1,14 +1,9 @@
 'use strict';
 
-/* Controllers */
+/* Main Stat Controllers */
 
-angular.module('statApp.controllers', []).
-  controller('AppCtrl', function ($scope, socket) {
-    socket.on('send:name', function (data) {
-      $scope.name = data.name;
-    });
-  }).
-  controller('MyCtrl1', function ($scope, socket) {
+angular.module('statApp').
+  controller('StatCtrl', function ($scope, socket) {
     socket.on('send:time', function (data) {
       $scope.time = data.time;
     });
@@ -130,8 +125,4 @@ angular.module('statApp.controllers', []).
                     { name: "Jacob", age: 27, birthday: "Aug 23, 1983", salary: "40,000" },
                     { name: "Nephi", age: 29, birthday: "May 31, 2010", salary: "50,000" },
                     { name: "Enos", age: 34, birthday: "Aug 3, 2008", salary: "30,000" }];
-
-  }).
-  controller('MyCtrl2', function ($scope) {
-    // write Ctrl here
   });

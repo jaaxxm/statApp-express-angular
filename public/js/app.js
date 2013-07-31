@@ -1,13 +1,19 @@
 'use strict';
+angular.module('statApp', []);
+angular.module('logApp', []);
+angular.module('dailyApp', []);
+angular.module('roiApp', []);
 
 // Declare app level module which depends on filters, and services
 
-angular.module('statApp', [
-  'statApp.controllers',
+angular.module('callStatApp', [
+  'statApp',
+  'logApp',
+  'dailyApp',
+  'roiApp',
+  'statApp.directives',
   'statApp.filters',
   'statApp.services',
-  'statApp.directives',
-
   // 3rd party dependencies
   'btford.socket-io',
   'ui.bootstrap', 
@@ -17,16 +23,24 @@ angular.module('statApp', [
 ]).
 config(function ($routeProvider, $locationProvider) {
   $routeProvider.
-    when('/view1', {
-      templateUrl: 'partials/partial1',
-      controller: 'MyCtrl1'
+    when('/stat', {
+      templateUrl: 'partials/stat',
+      action: 'statApp.StatCtrl'
     }).
-    when('/view2', {
-      templateUrl: 'partials/partial2',
-      controller: 'MyCtrl2'
+    when('/call-log', {
+      templateUrl: 'partials/call-log',
+      action: 'logApp.CallLogCtrl'
+    }).
+    when('/call-daily', {
+      templateUrl: 'partials/call-daily',
+      action: 'dailyApp.CallDailyCtrl'
+    }).
+    when('/roi', {
+      templateUrl: 'partials/roi',
+      action: 'roiApp.RoiCtrl'
     }).
     otherwise({
-      redirectTo: '/view1'
+      redirectTo: '/stat'
     });
 
   $locationProvider.html5Mode(true);
