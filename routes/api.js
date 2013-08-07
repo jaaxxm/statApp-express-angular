@@ -12,12 +12,7 @@ exports.name = function (req, res) {
  * MySQL
  */
 var Sequelize = require('sequelize-mysql').sequelize;
-
 var sequelize = new Sequelize('calls', 'root', null, {
-  // mysql is the default dialect, but you know...
-  // for demo purporses we are defining it nevertheless :)
-  // so: we want mysql!
-  dialect: 'mysql',
 
  // custom host; default: localhost
   host: 'localhost',
@@ -33,6 +28,6 @@ var sequelize = new Sequelize('calls', 'root', null, {
 
 var MainStat = sequelize.define('MainStat', {
 	provider: {type: Sequelize.STRING(20)}, 
-	dialStatus: {type: Sequelize.STRING(25)}, 
 	duration: {type: Sequelize.INTEGER(5)}
 });
+
