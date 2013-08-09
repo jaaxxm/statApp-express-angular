@@ -1,10 +1,8 @@
+// Main Stat
+
 module.exports = function(sequelize) {
-// module.exports = function(sequelize, DataTypes) {
-//   return sequelize.define('MainStat', {
-//     provider: DataTypes.STRING(20), 
-//     duration: DataTypes.INTEGER(5)
-//   });
-  return sequelize.query("SELECT * FROM stat").success(function(myTableRows) {
-    console.log(myTableRows)
+  return sequelize.query("SELECT COUNT( * ) AS  `all-calls` ,  `city` FROM  `stat` GROUP BY  `city` ORDER BY  `all-calls`").
+	success(function(rows) {
+    MainStat = rows
   });
 };

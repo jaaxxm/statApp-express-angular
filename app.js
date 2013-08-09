@@ -37,7 +37,6 @@ if (app.get('env') === 'production') {
   // TODO
 };
 
-
 /**
  * Routes
  */
@@ -48,6 +47,7 @@ app.get('/partials/:name', routes.partials);
 
 // JSON API
 app.get('/api/name', api.name);
+app.get('/api/mainStat', api.mainStat);
 
 // redirect all others to the index (HTML5 history)
 app.get('*', routes.index);

@@ -8,7 +8,6 @@ exports.name = function (req, res) {
   });
 };
 
-// Quick example
-// sequelize.query("SELECT * FROM stat").success(function(myTableRows) {
-//   console.log(myTableRows)
-// });
+exports.mainStat = function (req, res) {
+  res.json(MainStat);
+};
