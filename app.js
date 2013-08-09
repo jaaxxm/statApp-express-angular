@@ -7,10 +7,10 @@ var express = require('express'),
   api = require('./routes/api'),
   http = require('http'),
   path = require('path');
-
 var app = module.exports = express();
 var server = require('http').createServer(app);
 var io = require('socket.io').listen(server);
+var async = require('async'); 
 
 /**
  * Configuration

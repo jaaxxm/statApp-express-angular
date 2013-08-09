@@ -2,11 +2,11 @@
 
 // Declare app level module which depends on filters, and services
 
-angular.module('statApp', [
-  'statApp.controllers',
-  'statApp.filters',
-  'statApp.services',
-  'statApp.directives',
+angular.module('callStatApp', [
+  'statApp',
+  'logApp',
+  'dailyApp', 
+  'roiApp', 
 
   // 3rd party dependencies
   'btford.socket-io',
