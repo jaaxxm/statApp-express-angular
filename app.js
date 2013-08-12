@@ -10,7 +10,6 @@ var express = require('express'),
 var app = module.exports = express();
 var server = require('http').createServer(app);
 var io = require('socket.io').listen(server);
-var async = require('async'); 
 
 /**
  * Configuration
@@ -36,6 +35,7 @@ if (app.get('env') === 'development') {
 if (app.get('env') === 'production') {
   // TODO
 };
+
 
 /**
  * Routes

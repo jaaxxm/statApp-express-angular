@@ -1,11 +1,17 @@
 {
-  "name": "application-name",
-  "version": "0.0.0",
+  "name": "callStat",
+  "version": "0.0.1",
   "private": true,
   "dependencies": {
     "socket.io": "~0.9.16",
     "express": "~3.2.6",
     "mysql": "~2.0",
+    "sequilize": "~1.6.0",
     "jade": "~0.31.2"
-  }
+  },
+  "description": "Awesome calls statistics",
+  "main": "app.js",
+  "devDependencies": {},  
+  "author": "",
+  "license": "BSD"
 }

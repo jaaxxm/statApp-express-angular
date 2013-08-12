@@ -9,5 +9,6 @@ exports.name = function (req, res) {
 };
 
 exports.mainStat = function (req, res) {
-  res.json(MainStat);
+  // var period = req.params.period;	
+  res.json(IndexStat);
 };
