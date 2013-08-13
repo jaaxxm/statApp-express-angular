@@ -5,7 +5,7 @@ var sequelize = new Sequelize('calls', 'root', null, {
   host: 'localhost',
   // custom port; default: 3306
   port: 3306,
-  tablename: 'stat'  
+  define: { engine: 'MYISAM' }
 });
 
 // load models

@@ -110,6 +110,8 @@ angular.module('statApp', []).
       data: 'MainStat',
       enablePinning: false,
        columnDefs: [{ field: "city"},
-                    { field: "all-calls", width: 150}]
+                    { field: "start", width: 200},
+                    { field: "dialstatus", width: 150},
+                    { field: "sec", width: 50}]
     };    
   });
